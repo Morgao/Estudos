@@ -1,0 +1,24 @@
+Revisar a solução
+
+    3 minutos
+
+O código a seguir é uma possível solução para o desafio da unidade anterior.
+C#
+
+Console.WriteLine("This is the first line.");
+
+Console.Write("This is ");
+Console.Write("the second ");
+Console.Write("line.");
+
+Esse código é apenas uma solução possível, entre muitas maneiras possíveis de obter o mesmo resultado. No entanto, você deve ter usado os métodos [Console.WriteLine()](https://learn.microsoft.com/pt-br/dotnet/api/system.console.writeline#system-console-writeline) e [Console.Write(String)](https://learn.microsoft.com/pt-br/dotnet/api/system.console.write#system-console-write(system-string)) para produzir a saída desejada.
+Output
+
+This is the first line.
+This is the second line.
+
+Se você conseguiu, parabéns! Prossiga para a próxima unidade para uma verificação de conhecimentos.
+
+Importante
+
+Se você teve dificuldades para concluir o desafio, reveja as unidades anteriores antes de continuar.
