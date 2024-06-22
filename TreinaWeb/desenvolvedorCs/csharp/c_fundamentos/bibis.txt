@@ -1,0 +1,233 @@
+inferencia de tipo
+var nome = "matheus";
+
+conversoes de tipo
+
+// conversao implicita
+int numero = 50;
+double y;
+y = numero;
+
+
+objetc objeto1 = numero;
+
+// cast exeplicita
+float numero1 = 5.6;
+int numero2 = (int)(numero1); // converte float em int
+
+conversao de dstring
+
+decimal taxa = 19.8;
+string taxa2 = taxa.ToString(
+
+DateTime data = DateTime.Now;
+string data2 = data.ToString();
+
+string reposta = "12";
+int idade = int.Parse(resposta); // converte string em inteiro
+int idade2 = Convert.ToInt32(resposta);
+
+/// string /// 
+
+aplicacao para console
+escrever na tela
+console.Write // nao pula linha
+console.WriteLine("Hello world"); pula linha
+console.ReadKey(); // espera uma tecla para finalizar
+var nome console.ReadLine();
+console.Read // primeiro caracter
+console.ReadKey // apos um espaco 
+
+using System;
+
+class TipoVariavel
+{
+      public static void Main()
+      {
+            int minhaVariavel = 10;
+            //Aparece o tipo da variável
+            Console.WriteLine(minhaVariavel.GetType());
+      }
+}
+Isso retornaria o tipo da variável minhaVariavel, neste caso, System.Int32. 
+
+tipagem por inferencia
+int inteiro1 = 4; // declaracao de forma explicita
+var inteiro2 = 5; // keyworld variavel nao declarada explicitamente
+o compilador decide o tipo de acordo com o tipo de dado que a var recebe
+inferencia do compilador
+nao pode criar uma var sem atriubicao
+
+tipagem fraca no dot.net
+dinamic
+
+dynamic minhavariavel = 2 // tipagem fraca
+minhavariavel = "treinaweb" // a mesmas variavel agora assumi tipo de string
+ e var depois de declarada assumi o mesmo tipo ate o final da aplicacao[
+
+
+string s = "Texto";
+Console.WriteLine(s);
+
+Você pode concatenar sequências, como este: 
+
+string s = "Texto";
+string s2 = "do Curso";
+Console.WriteLine(s + " " + s2);
+
+No exemplo abaixo, estamos obtendo, a partir da posição zero, 3 caracteres: 
+string s = "Texto";
+string s2 = s.Substring(0,3);
+Console.WriteLine(s2);
+
+Caracteres de escape
+
+Caracteres de escape, como "\n" (nova linha) e "\t" (tabulação) podem ser incluídos em sequências. Por exemplo:
+
+string s = "ab\ncd";
+Console.WriteLine(s);
+
+
+Teremos como resultado:
+
+Se você desejar incluir uma barra dentro da string, ela deve ser precedida com outra barra invertida. Como no exemplo:
+
+string s = "ab\\ncd";
+Console.WriteLine(s);
+Repare que, nesse caso, o caractere de escape (\n) acaba sendo anulado pela outra barra que foi acrescentada (“ab\\ncd”).
+
+O símbolo @ ( Arroba )
+
+O @ diz para o construtor da String ignorar caracteres de escape e quebras de linha. Por exemplo:
+
+string s = @"ab\ncd";
+Console.WriteLine(s);
+
+
+Resultado:
+
+Repare que, apesar de haver o caractere de escape (“\n”), ele é ignorado e tratado como uma string comum, graças ao “@”.
+
+
+
+string string1 = "ABC";
+            string string2 = "001";
+            //concatecao pesada lenta
+            //Console.WriteLine(string1 +" "+ string2+ " FDK ");
+            // classe que faz operacao com strings
+
+
+declarar um stringbuilder uma classe
+StringBuilder sb = new StringBuilder();
+
+
+//
+
+StringBuilder sb = new StringBuilder();
+            sb.Append(string1);
+            sb.Append(" ");
+            sb.Append(string2);
+            sb.Append(" ");
+            sb.Append("Fj5");
+            Console.WriteLine("{0}", sb.ToString());
+            Console.ReadKey();
+
+
+Existem dois tipos de conversões:
+
+    Explícitas.
+    Implícitas.
+uma conversão explícita (cast) 
+Quando uma variável pode ser mais de um tipo, o recurso de conversão explícita pode ser usado. Veja:
+
+int i;
+double y = 10.5;
+i = (int)y;
+
+
+
+Já nas conversões implícitas isso ocorre de forma transparente nas atribuições de variáveis e passagens de parâmetros de métodos, desde que não se use o cast e os dados “caibam” um no outro. Veja:
+
+long x;
+int y = 5;
+x = y;
+
+No exemplo, pegou-se o valor de y e simplesmente atribuiu-se à variável x do tipo long, o que pode ser feito sem problemas, pois o tipo int cabe dentro do tipo long. Exemplo: 
+
+boxing e unboxing da dot.net
+
+
+
+
+
+var nome = "joel";
+var sobrenome = " Rodrigues";
+var nomeCompleto2 = $"{ nome } { sobrenome }";
+
+Console.WriteLine(nomeCompleto.ToUpper()); // converte td pra maiusculo
+Console.WriteLine(nomeCompleto.ToLower()); // converte para minuscolo
+Console.WriteLine(nomeCompleto.Substring(4,5)); a partir do indice 4, quero 56 caracters
+Console.WriteLine(nomeCompleto.Contains('o')); se voltar veradedeiro contem
+Console.WriteLine(nomeCompleto.StartWith('J')) comeca com letra j
+Console.WriteLine(nomeCompleto.EndsWith('L')) termina com letra l
+Console.WriteLine(nomeCompleto.IndexOf('e')) primeiro indice da letra eindice onde posicao dele na string
+Console.WriteLine(nomeCompleto.LastIndexOf('L')) ultimo indice da letra e
+
+
+
+date time 
+data e hora
+
+
+var hoje = DateTime.Today; // data atual sem as horas
+var agora = DateTime.Now; // data atual e hora atual
+var data1 = ne DateTime(2020, 03, 28);
+var data2 = ne DateTime(2020, 03, 28, 11, 25, 30); com hora
+
+var data3 = DateTime.Parse("15/08/2020 12:21:57");
+
+Console.WriteLine(data3.Day);
+
+Console.WriteLine(data3.Month);
+
+Console.WriteLine(data3.Year);
+
+Console.WriteLine(data3.Hour);
+
+Console.WriteLine(data3.Minute);
+
+Console.WriteLine(data3.Second);
+
+Console.WriteLine(data3.AddDays(5));
+Console.WriteLine(data3.AddMonths(-1));
+Console.WriteLine(data3.ToLongDataString());
+Console.WriteLine(data3.ToLongTimeString());
+Console.WriteLine(data3.ToShortDataString());
+Console.WriteLine(data3.ToShortTimeString());
+
+
+arrays, vetores em portugues
+arrays de string
+arrays de inteiros
+
+
+array possui um tamanho fixo
+
+int[] numeros = new int[3]; // array de numeros inteiros
+numeros[0] =2;
+numeros[1] =5;
+numeros[2] =7;
+Console.WriteLine(numeros[0]);
+
+
+
+int[] pares = new int[3] { 2, 4, 6};
+
+int[] impares = ne int[] { 1, 3, 5, 7};
+
+string[] nomes = new [] { "joao", "pedro", "Marcelo" };
+
+string[] paises = { "brasil", "EUA, "franca" } ;
+
+var cidades = new [] { "sao paulo", "rio de janeior", "Manaus" };
+Console.WriteLine(cidades[0]);

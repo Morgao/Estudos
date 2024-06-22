@@ -1,0 +1,41 @@
+class Retangulo{
+    private _largura: number;
+    private _altura: number;
+    
+
+
+    
+    get largura(): number{
+        return this._largura;
+    }
+    get altura(): number{
+        return this._altura;
+    }
+
+    set largura(largura: number){
+        this._largura = largura;
+    }
+    set altura(altura: number){
+        this._altura = altura;
+    }
+    get area(): number{
+       
+       let area = this._largura * this._altura;
+         
+        return area;
+    }
+    get perimetro(): number{
+       
+       let perimetro = (this._largura + this._altura)*2;
+        
+        return perimetro;
+    }
+}   
+
+let novoRetangulo01: Retangulo = new Retangulo();
+
+novoRetangulo01.altura = 4;
+novoRetangulo01.largura = 2;
+console.log(novoRetangulo01);
+console.log(novoRetangulo01.area);
+console.log(novoRetangulo01.perimetro);

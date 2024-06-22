@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NInteiros2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] vetor = new int[];
+            int n = 0;
+            Console.WriteLine("Digite quantos elementos");
+            int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < n; i++) 
+            {
+                Console.WriteLine("Posicao {0} ", i);
+                int.Parse(Console.ReadLine(ve
+            }
+
+
+        }
+    }
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace a1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] vetor = new int[5];
+            
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Posicao {0} ", i);
+                vetor[i] = (Convert.ToInt32(Console.ReadLine()));
+            }
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Vetor na posicao{0} valor:{1}", i, vetor[i]);
+            }
+            Console.ReadKey();
+        }
+    }
+}
